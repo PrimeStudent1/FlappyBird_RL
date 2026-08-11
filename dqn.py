@@ -1,9 +1,11 @@
 import torch
 import torch.nn as nn
 
-
 class DQN(nn.Module):
-    # input dim, output dim, hidden dim
+    """
+    Deep Q-Network (DQN) Neural Network Architecture.
+    Maps input state vectors to Q-value predictions for each available action.
+    """
     def __init__(self, state_dim=12, action_dim=2, hidden_dim=256):
         super(DQN, self).__init__()
 
@@ -14,4 +16,4 @@ class DQN(nn.Module):
         )
 
     def forward(self, x):
-        return self.model(x)
+        return self.model(x)
