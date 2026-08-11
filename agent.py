@@ -194,4 +194,4 @@ if __name__ == "__main__":
     if args.train:
         dql.run(is_training=True)
     else:
-        dql.run(is_training=False, render=True)
+        dql.run(is_training=False, render=True)
